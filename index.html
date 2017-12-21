@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Personal Bootstrap Website Exercise</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- NAV BEGIN-->
+    <!-- Login Menu-->
+    <div id="login-menu">
+        <nav class="login-menu nav">
+            <div class="container">
+                <ul class="pull-right navbar-header">
+                    <li class="btn nav-item">
+                        <a class="nav-link active" href="#login.html"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a>
+                    </li>
+                    <li class="btn nav-item">
+                        <a class="nav-link active" href="#register.html"><span class="glyphicon glyphicon-pencil"> REGISTER</span></a>
+                    </li>
+                    <li class="btn nav-item">
+                        <a class="nav-link active" href="#cart.html"><span class="glyphicon glyphicon-check"> CART</span></a>
+                    </li>
+                    <li class="btn nav-item">
+                        <a class="nav-link active" href="#checkout.html"><span class="glyphicon glyphicon-shopping-cart"> CHECKOUT</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Brand Banner -->
+    <div class="banner">
+        <a href="index.html"><h3>Charfie 吳梓榳</h3></a>
+    </div>
+    <!-- Main Menu -->
+    <div id="main-menu">
+        <nav class="main-menu nav">
+            <div class="container">
+                <!-- Toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-hamburger"> MENU</span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-menu-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a class="btn btn-default" href="index.html" role="button">Home</a></li>
+                        <li><a class="btn btn-default" href="#about.html" role="button">About</a></li>
+                        <li><a class="btn btn-default" href="#gallery.html" role="button">Gallery</a></li>
+                        <li><a class="btn btn-default" href="#contact.html" role="button">Contact Me</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <!-- NAV END -->
+    <!-- Carousel BEGIN -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="carousel-slide-1" class="carousel slide" data-ride="carousel">
+                <!-- Carousel Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-slide-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-slide-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-slide-1" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapping for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="https://unsplash.it/960/600/" alt="">
+                        <div class="carousel-caption">
+                            <h1>Lorem ipsum dolor.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://unsplash.it/960/600/" alt="">
+                        <div class="carousel-caption">
+                            <h1>Lorem ipsum dolor.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://unsplash.it/960/600/" alt="">
+                        <div class="carousel-caption">
+                            <h1>Lorem ipsum dolor.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a href="#carousel-slide-1" class="left carousel-control" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carousel-slide-1" class="right carousel-control" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true""></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel END -->
+    <hr>
+    <!-- Main Content BEGIN -->
+    <!-- About -->
+    <div id="content" class="container">
+        <div id="about" class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <div class="avatar col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="https://unsplash.it/500/500" alt="">
+                </div>
+                <div class="intro col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <h1>About</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti deserunt, officia voluptas perspiciatis nisi libero laboriosam consequuntur, sequi qui.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dicta explicabo tempore ipsam possimus tenetur non, eum esse praesentium perferendis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, cumque!</p>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <table class="table">
+                        <tr>
+                            <th class="col-xs-2 col-sm-3 col-md-4 col-lg-3">Birth</th>
+                            <td class="col-xs-10 col-sm-9 col-md-8 col-lg-9">1985</td>
+                        </tr>
+                        <tr>
+                            <th class="col-xs-2 col-sm-3 col-md-4 col-lg-3">Education Background</th>
+                            <td class="col-xs-10 col-sm-9 col-md-8 col-lg-9">MBA in Marketing</td>
+                        </tr>
+                        <tr>
+                            <th class="col-xs-2 col-sm-3 col-md-4 col-lg-3">Work Experience</th>
+                            <td class="col-xs-10 col-sm-9 col-md-8 col-lg-9">
+                                Live & Studio Lead Vocalist
+                                <br> Overseas Education Consultant
+                                <br> Executive Recruitment Consultant
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="col-xs-2 col-sm-3 col-md-4 col-lg-3">Skills</th>
+                            <td class="col-xs-10 col-sm-9 col-md-8 col-lg-9"></td>
+                        </tr>
+                        <tr>
+                            <th class="col-xs-2 col-sm-3 col-md-4 col-lg-3">Contacts</th>
+                            <td class="col-xs-10 col-sm-9 col-md-8 col-lg-9">Please feel free to leave your msg via <a href="#contact.html">Contact Me.</a> Thank you.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Gallery -->
+        <div id="gallery" class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h1>Gallery</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente cum alias maiores dolorum magnam voluptas, nostrum quaerat in ea velit vel dignissimos odit illo, distinctio sunt quam facilis? Dolore?</p>
+                <div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 01</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 02</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, doloribus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 03</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, laboriosam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 04</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, maiores!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 05</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, veniam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
+                        <div class="gallery-item">
+                            <img src="https://unsplash.it/500/500/" alt="">
+                            <div class="gallery-item-intro">
+                                <a href="#"><h4>Item 06</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- Main Content END -->
+    <!-- Contact Me -->
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <form class="form-horizontal">
+                    <h1>Contact Me</h1>
+                    <div class="form-group">
+                        <label for="name-input" class="col-sm-2 control-label">YOUR NAME</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">EMAIL ADDRESS</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">WANNA SAY SOMETHING?</label>
+                        <div class="col-sm-8">
+                            <input type="textarea" class="form-control" id="message-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer" class="container">
+        <div id="copyright">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores molestiae veniam enim, voluptatem? Animi praesentium voluptates dolore tenetur alias!</h6>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
